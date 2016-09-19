@@ -7,6 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <div class="col-xs-3">
+      logo
+    </div>
+    <div class="col-xs-4">
+      Photography quotes for the wondering souls.
+    </div>
+    <div class="col-xs-5">
+      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'About', '#' %>
+    </div>
+  </header>
+  <br class="clear" />
 
 <%= yield %>
 
