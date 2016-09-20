@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background: url(/assets/splurtybg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 header {
   border-top: 9px solid #222222;
@@ -25,7 +32,7 @@ hr {
     margin: 10px 10px;
     text-align: center;
     color: #FFF;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 16px;
     cursor: pointer;
     transform:rotate(11deg);
@@ -36,20 +43,33 @@ hr {
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
-  padding-top: 26px;
+  padding-top: 40px;
 
 }
 
 .links{
-  padding-top: 26px;
+  padding-top: 30px;
 }
 .links a {
   color: black;
   font-size: 25px;
-  border-bottom: 1px solid #dfdfdf;
-  font-family: bungee_regularregular, sans-serif;
+
+  font-family: bungeeinline, sans-serif;
   font-weight: bold;
-}
+
+  margin-left: 20px;
+  float: right;
+
+  padding: 5px;
+  border: 2px solid #222222;
+
+  }
+
+  .links a:hover {
+    text-decoration: none;
+    background: #f84342;
+    color: white;
+  }
 
 h1 {
   font-family: bungee_regularregular, sans-serif;
@@ -59,14 +79,28 @@ h1 {
 
 h2 {
   font-family: bungeeinline, sans-serif;
+  font-size: 15px;
 
 
 }
 
 .next-quote {
-  color: #f84342;
+  position: absolute;
+  border: 2px solid #222222;
+  color: #222222;
+  bottom: 350px;
   font-family: bungeeinline, sans-serif;
   font-size: 20px;
+  padding: 5px 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.next-quote:hover {
+  text-decoration: none;
+  color: white;
+  background: #f84342;
 }
 
 
@@ -75,7 +109,7 @@ h2 {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
   text-align:right;
-  font-size:10px;
+  font-size:14px;
 }
 
 .logo:hover {
@@ -88,19 +122,68 @@ h2 {
 
 
 @media (max-width: 750px) {
-  .footer-blurb {
-    text-align: left;
-  }
+
 }
 
 .modal {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
-
-h2 span {
-  color: #dddddd;
+#quote-heading {
+  padding: 8px;
+  background: #f84342;
+  color: white;
+  outline: 2px solid #f84342;
+  outline-offset: 5px;
+  margin-bottom: 45px;
 }
 
-::selection {
+.name {
+  font-size: 60px;
+}
+
+h2 span {
+  font-weight: bold;
+  color: #222222;
+}
+
+/*::selection {
   background-color: #f84342;
+}
+*/
+
+#twitter-link {
+  color: #f84342;
+}
+
+#twitter-link:hover {
+  color: #f84342;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  #about {
+    background: white;
+  }
+  .quote {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 30px;
+  }
+
+  .next-quote {
+    padding: 5px 45px;
+  }
+
+  .links a {
+    font-size: 18px;
+
+  }
+
+  .footer-blurb {
+  text-align: center; 
+  }
 }
