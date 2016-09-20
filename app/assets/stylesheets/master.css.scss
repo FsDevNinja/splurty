@@ -85,15 +85,14 @@ h2 {
 }
 
 .next-quote {
-  position: absolute;
+  margin-top: 150px;
   border: 2px solid #222222;
   color: #222222;
   bottom: 350px;
   font-family: bungeeinline, sans-serif;
   font-size: 20px;
   padding: 5px 15px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin:auto;
 
 }
 
@@ -184,6 +183,6 @@ h2 span {
   }
 
   .footer-blurb {
-  text-align: center; 
+  text-align: center;
   }
 }
